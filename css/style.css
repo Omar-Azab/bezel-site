@@ -1,0 +1,519 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                START NAV BAR                               */
+/* -------------------------------------------------------------------------- */
+.navbar-icons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-icons::after{
+    content: "";
+    height: 82px;
+    width: 1px;
+    background-color: rgb(24, 24, 24);
+    position: absolute;
+    left: -10px;
+    top: -35px;    
+}
+.navbar-icons a{
+    padding-left:1rem ;
+    color: rgb(24, 24, 24);
+}
+@media screen and (max-width:600px) {
+    .navbar-icons{
+        display: none;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    .navbar-icons{
+        display: none;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .navbar-icons{
+        display: none;
+    }
+}
+/* -------------------------------------------------------------------------- */
+/*                                END NAV BAR                               */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                START HEADER                                */
+/* -------------------------------------------------------------------------- */
+header h1{
+font-size: 8rem;
+font-weight: bold;
+line-height: 1.25;
+margin: 20px 0px 10px;
+opacity: 0;
+transition: 0.5s all;
+}
+header:hover h1{
+    opacity: 1;
+    animation:  0.5 koko 1;
+}
+@keyframes koko{
+    0% { transform: scale(0.5);}
+    100% { transform: scale(1);}
+}
+.carousel-item {
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    }
+    .carousel-item img{
+
+        height: 100vh;
+    }
+.carousel-item::before{
+    content: "";
+    background-color: rgba(31, 31, 31, 0.55);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.carousel-caption{
+    height: 100vh;
+}
+/* .carousel-item .carousel-caption .caption-text h1{
+    font-size: 7rem;
+    font-weight: bold;
+} */
+
+
+.carousel-item .carousel-caption .caption-text h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+} 
+.slide-text{
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    bottom: 300px;
+}
+.carousel-item .carousel-caption .btn-header-caption  button{
+    padding: 0.8rem 2rem;
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+.carousel-item .carousel-caption .btn-header-caption  button{
+    padding: 0.8rem 2rem;
+    margin-left: 5px;
+    font-size: 1rem;
+}
+.bt1{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+}
+.carousel-control-prev, .carousel-control-next{
+    position: unset;
+    opacity: 1;
+    width: unset;
+    border: 1px solid white;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-image: unset;
+}
+.hov{
+    position: relative;
+    padding: 1rem;
+}
+.hov1{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    right: 100%;
+    background-color: white;
+    transition: 1s all;
+    z-index: -1;
+}
+.hov:hover .hov1{
+    right: 0%;
+}
+.carousel-control-prev-icon i, .carousel-control-next-icon i{
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    text-align: center;
+    transition: 1s all;
+}
+.hov:hover i{
+    color: black;
+}
+@media screen and (max-width:600px) {
+    header h1{
+        font-size: 60px;
+    }
+    .carousel-item .carousel-caption .caption-text h4{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    header h1{
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    header h1{
+        font-size: 60px;
+    }
+
+}
+/* -------------------------------------------------------------------------- */
+/*                                END HEADER                                */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                 START ABOUT                                */
+/* -------------------------------------------------------------------------- */
+.about .about-caption h6{
+    margin-bottom: 1rem;
+}
+.about .about-caption span{
+    font-size: 1.5rem;
+    color: rgb(0, 195, 218) !important;
+}
+.about .about-caption span::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing{
+0%{ content: "w |";}
+3%{ content: " we|";}
+6%{ content: " web|";}
+9%{ content: "webs |";}
+12%{ content: " websi|";}
+15%{ content: " websit|";}
+18%{ content: "website |";}
+21%{ content: " websi|";}
+24%{ content: " websit|";}
+27%{ content: "website |";}
+30%{ content: " websites|";}
+33%{ content: " website|";}
+36%{ content: "websit |";}
+39%{ content: " websi|";}
+42%{ content: " webs|";}
+45%{ content: "web |";}
+48%{ content: " we|";}
+51%{ content: " w|";}
+53%{ content: " |";}
+56%{ content: "a |";}
+59%{ content: " ap|";}
+62%{ content: " app|";}
+65%{ content: "apps |";}
+68%{ content: " app|";}
+71%{ content: " ap|";}
+74%{ content: "a |";}
+77%{ content: " |";}
+80%{ content: " s|";}
+83%{ content: " so |";}
+86%{ content: " sof|";}
+89%{ content: " soft|";}
+92%{ content: "sof |";}
+95%{ content: " so|";}
+98%{ content: " s|";}
+100%{ content: "|";}
+}
+
+.about .btn-about button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius:0 ;
+    padding: 1rem;
+    color: black;
+    margin-top: 1.5rem;
+    transition: 1s all;
+}
+.about .btn-about button:hover {
+    background-color: black;
+    color: white;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 END ABOUT                                */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                 START TEAM                                 */
+/* -------------------------------------------------------------------------- */
+.team .team-caption h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.team .team-caption h2::after{
+    content: "C";
+    position: absolute;
+    font-size: 5.5rem;
+    opacity: 0.1;
+    margin-bottom: 1.5rem;
+}
+.team-items{
+    position: relative;
+    transition: 2s;
+    overflow: hidden;
+}
+.team-items .team-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 5%;
+    visibility: hidden;
+    background-color: rgba(0, 195, 218, 0.9);
+    transition: .5s all;
+}
+ .team-items:hover .team-overlay{
+    top: 0px;
+    visibility: visible;
+} 
+
+.team-items .team-overlay .icon{
+    padding: 1rem;
+}
+.team-items .team-overlay .icon a{
+    color: white;
+    padding-left: 1rem;
+}
+.team-items .team-overlay .name{
+    position: absolute;
+    bottom: 0px;
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+}
+.team-items .team-overlay .name h5{
+    margin: 0px;
+    color:white;
+    font-size: 1rem;
+}
+.team-items .team-overlay .name span{
+    color:white;
+    font-size: 0.8rem;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 END TEAM                                 */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                START SERVICE                               */
+/* -------------------------------------------------------------------------- */
+#service{
+    background-color: rgb(31, 31, 31);
+    opacity: 0.7;
+}
+/* -------------------------------------------------------------------------- */
+/*                                END SERVICE                               */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                START PRICES                               */
+/* -------------------------------------------------------------------------- */
+
+.prices{
+    background-color: rgb(247, 247, 247);
+}
+.pricing-caption h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.pricing-caption h2::after{
+    content: "C";
+    position: absolute;
+    font-size: 5.5rem;
+    opacity: 0.1;
+    margin-bottom: 1.5rem;
+}
+.prices .pricing-item{
+    padding: 4rem 2rem;
+    transition: 1s all;
+}
+.prices .pricing-item h5{
+    font-size: 4rem;
+    position: relative;
+    padding-left: 5px;
+}
+.prices .pricing-item span{
+    position: absolute;
+    left: 0px;
+    font-size: 1rem;
+}
+.prices .pricing-item p{
+    font-weight: 300;
+}
+.prices .pricing-item button{
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: .6rem;
+}
+.pricing-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 40px;
+}
+.prices .big{
+    padding: 4rem 2rem;
+    position: relative;
+    bottom: 20px;
+}
+.prices .big h5{
+    color: #00c3da;
+}
+.prices  .big button{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.prices .big .best-value{
+    position: absolute;
+    background-color: #00c3da;
+    padding: 0.3rem;
+    border-radius: 20px;
+    right: 15px;
+}
+.prices .big .best-value p{
+color: white;
+margin: 0px;
+font-size: 12px;
+}
+/* -------------------------------------------------------------------------- */
+/*                                END PRICES                               */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                START CAROSEL                               */
+/* -------------------------------------------------------------------------- */
+
+.second-Carousel {
+    background-color:#f7f7f7 ;
+    
+}
+
+.image-slider2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+#carouselExampleIndicators2 .slider2-box{
+    background-color: #fff;
+}
+
+
+#carouselExampleIndicators2 .carousel-indicators  [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00c3da;
+}
+
+.carousel-item::before{
+    background-color: unset;
+}
+
+.slider2-box{
+    max-width:650px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+#carouselExampleIndicators2 .carousel-control-prev-icon{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+#carouselExampleIndicators2 .carousel-item img{
+    height: unset;
+}
+#carouselExampleIndicators2 .carousel-control-next-icon:hover i{
+    color: #00c3da !important;
+}
+#carouselExampleIndicators2 .carousel-control-prev-icon:hover i{
+    color: #00c3da !important;
+
+}
+#carouselExampleIndicators2 .carousel-control-prev-icon i ,#carouselExampleIndicators2 .carousel-control-next-icon i{
+    font-size:24px;
+}
+#carouselExampleIndicators2 .carousel-control-next-icon i{
+position: absolute;
+right: 0;
+top: 50%;
+border: 0;
+}
+#carouselExampleIndicators2 .carousel-control-prev-icon i{
+    position: absolute;
+    left: 0;
+    border: 0;
+ }
+
+ #carouselExampleIndicators2 .carousel-control-prev{
+     border: 0;
+ }
+ #carouselExampleIndicators2 .carousel-control-next{
+    border: 0;
+ }
+ #carouselExampleIndicators2 .carousel-item{
+     height: auto;
+ }
+
+/* -------------------------------------------------------------------------- */
+/*                                 END CAROSEL                                */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                START FOOTER                                */
+/* -------------------------------------------------------------------------- */
+footer h2{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+footer h2::after{
+    content: "G";
+    position: absolute;
+    font-size: 5.5rem;
+    opacity: 0.1;
+    margin-bottom: 1.5rem;
+}
+
+.form .items input,textarea{
+    padding: .5rem;
+    width: 100%;
+}
+.form button{
+    color: white;
+    padding: 0px 30px;
+    height: 50px;
+    font-size: 14px;
+
+}
+/* -------------------------------------------------------------------------- */
+/*                                  END SITE                                  */
+/* -------------------------------------------------------------------------- */
